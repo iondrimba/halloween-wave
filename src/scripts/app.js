@@ -35,7 +35,7 @@ export default class App {
     this.playIntro = document.querySelector('.play-intro');
     this.loaderBar = document.querySelector('.loader');
 
-    this.loader.load('./src/sound/children.mp3');
+    this.loader.load('./src/sound/chaos.mp3');
     this.loader.complete = this.complete.bind(this);
 
     this.count = 0;
