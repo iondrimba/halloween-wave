@@ -35,7 +35,7 @@ export default class App {
     this.playIntro = document.querySelector('.play-intro');
     this.loaderBar = document.querySelector('.loader');
 
-    this.loader.load('./src/sound/chaos.mp3');
+    this.loader.load('https://iondrimbafilho.me/chaos.mp3');
     this.loader.complete = this.complete.bind(this);
 
     this.count = 0;
@@ -388,7 +388,7 @@ export default class App {
   }
 
   loadTextures() {
-    this.textureNormal = new THREE.TextureLoader().load('src/img/metal_plate_Nor_1k.jpg');
+    this.textureNormal = new THREE.TextureLoader().load('https://raw.githubusercontent.com/iondrimba/images/master/metal_plate_Nor_1k.jpg');
 
     this.textureNormal.wrapS = THREE.RepeatWrapping;
     this.textureNormal.wrapT = THREE.RepeatWrapping;

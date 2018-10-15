@@ -1,5 +1,5 @@
 {
-  "name": "threejs-cannonjs-demo",
+  "name": "halloween-wave",
   "version": "1.0.0",
   "description": "ThreeJs + CannonJs Demo",
   "main": "src/index.js",
@@ -8,7 +8,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iondrimba/threejs-cannonjs-demo.git"
+    "url": "git+https://github.com/iondrimba/halloween-wave.git"
   },
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
