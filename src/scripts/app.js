@@ -77,6 +77,7 @@ export default class App {
       this.thirdRing = new THREE.Object3D();
       this.fourthRing = new THREE.Object3D();
       this.gui = new dat.GUI();
+      this.gui.closed = true;
       this.angle = 0;
 
       this.setupAudio();
@@ -255,7 +256,7 @@ export default class App {
   }
 
   createRingOfSpheres(count, radius, meshColor, group) {
-    const geometry = new THREE.SphereGeometry(.3, 32,32);
+    const geometry = new THREE.SphereGeometry(.3, 32, 32);
     const meshParams = {
       color: meshColor.color,
       cubemap: this.cubemap,
@@ -343,7 +344,7 @@ export default class App {
         const s = this.objects[i];
 
         TweenMax.to(s.position, .3, {
-          y: this.map(p, 120, 150, 2, 3)
+          y: p / 30
         });
       }
     }
