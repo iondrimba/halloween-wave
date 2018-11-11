@@ -256,7 +256,7 @@ export default class App {
   }
 
   createRingOfSpheres(count, radius, meshColor, group) {
-    const geometry = new THREE.SphereGeometry(.3, 32, 32);
+    const geometry = new THREE.SphereBufferGeometry(.3, 32, 32);
     const meshParams = {
       color: meshColor.color,
       cubemap: this.cubemap,
